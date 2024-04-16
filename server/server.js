@@ -47,7 +47,7 @@ app.post('/register', (req, res) => {
 
         if (rows.length > 0) {
             // User already exists
-            return res.status(400).json({ error: 'User already exists' });
+            return res.status(400).json({ error: 'User already exists' })
         }
 
         // User does not exist, insert into database

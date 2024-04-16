@@ -11,6 +11,7 @@ import image17 from '../Assets/17.jpg';
 import image16 from '../Assets/16.jpg';
 import image15 from '../Assets/15.jpg';
 import image14 from '../Assets/14.jpg';
+import Navbar from './Navbar';
 
 
 
@@ -80,11 +81,12 @@ const GameOfTheYear = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="page-wrapper" style={{ backgroundColor: 'goldenrod' }}>
       <div id="top" /> {/* Anchor point at the top of the page */}
       <div className="navigation-section" style={{ width: '100%', overflow: 'hidden', paddingBottom: '0.1px' }}>
         <Nav ref={navRef} className="justify-content-between" style={{ backgroundColor: 'goldenrod', padding: '10px 0', whiteSpace: 'nowrap', overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
-          <Nav.Link href="#top" className={`font-weight-bold mx-3 ${activeYear === 'top' ? 'active' : ''}`} style={{ color: 'black', fontSize: '20px', fontWeight: 'bold', textDecoration: activeYear === 'top' ? 'underline' : 'none' }}>OVERVIEW</Nav.Link>
           {yearsData.map((year, index) => (
             <Nav.Link
               key={index}
@@ -116,6 +118,7 @@ const GameOfTheYear = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

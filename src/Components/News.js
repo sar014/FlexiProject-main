@@ -7,11 +7,13 @@ import news3 from '../Assets/News/news3.jpg'
 import news4 from '../Assets/News/news4.jpg'
 import news5 from '../Assets/News/news5.jpg'
 import news6 from '../Assets/News/news6.jpg'
+import Navbar from './Navbar'
 
 
 export const News = () => {
   return (
     <>
+    <Navbar/>
     <div className="news-card-container">
       
     <div className="news-card">
