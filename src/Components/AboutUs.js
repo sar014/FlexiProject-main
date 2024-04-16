@@ -3,9 +3,13 @@ import './aboutUs.css';
 import profile1 from '../Assets/profile1.jpg';
 import profile2 from '../Assets/profile2.avif';
 import profile3 from '../Assets/profile3.jpg';
+import Navbar from './Navbar';
+
 
 export const AboutUs = () => {
   return (
+    <>
+    <Navbar/>
     <section>
   <div className="row">
     <h1>Our Team</h1>
@@ -110,6 +114,7 @@ export const AboutUs = () => {
     </div>
   </div>
 </section>
+</>
 
   )
 }
